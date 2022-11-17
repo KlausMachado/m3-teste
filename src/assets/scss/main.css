@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem 1rem 10rem;
+}
+
+main {
+  padding: 2.5rem 10rem;
+}
+main section h1 {
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 4rem;
+}
+main section .cores {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+main section .cores span {
+  margin-bottom: 0.9rem;
+}
+main section .cores div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+main section .cores div input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .cores div input::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #00c0ee;
+  opacity: 0;
+}
+main section .cores div input:checked::before {
+  opacity: 1;
+}
+main section .cores div label {
+  font-size: 14px;
+  margin-left: 0.6rem;
+}
+main section .tamanhos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 11rem;
+}
+main section .tamanhos span {
+  margin-bottom: 1.5rem;
+}
+main section .faixaPrecos {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+main section .faixaPrecos span {
+  margin-bottom: 0.9rem;
+}
+main section .faixaPrecos div input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .faixaPrecos div input::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #00c0ee;
+  opacity: 0;
+}
+main section .faixaPrecos div input:checked::before {
+  opacity: 1;
+}
+main section .faixaPrecos div label {
+  margin-left: 0.6rem;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,110 @@
+@import "reset";
+@import "variables.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10rem 1rem 10rem;
+}
+
+main {
+  padding: 2.5rem 10rem;
+
+  section {
+    h1 {
+      font-weight: 400;
+      font-size: 32px;
+      margin-bottom: 4rem;
+    }
+    .cores {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+
+      span {
+        margin-bottom: 0.9rem;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.75rem;
+
+        input {
+          appearance: none;
+          width: 1rem;
+          height: 1rem;
+          border: 1px solid $preto2;
+          outline: none;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        input::before {
+          content: "";
+          width: 0.7rem;
+          height: 0.7rem;
+          background-color: $cor-primaria;
+          opacity: 0;
+        }
+
+        input:checked::before {
+          opacity: 1;
+        }
+
+        label {
+          font-size: 14px;
+          margin-left: 0.6rem;
+        }
+      }
+    }
+    .tamanhos {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 11rem;
+      span {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .faixaPrecos {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 0.9rem;
+      }
+      div {
+        input {
+          appearance: none;
+          width: 1rem;
+          height: 1rem;
+          border: 1px solid $preto2;
+          outline: none;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        input::before {
+          content: "";
+          width: 0.7rem;
+          height: 0.7rem;
+          background-color: $cor-primaria;
+          opacity: 0;
+        }
+
+        input:checked::before {
+          opacity: 1;
+        }
+        label {
+          margin-left: 0.6rem;
+        }
+      }
+    }
+  }
+}
