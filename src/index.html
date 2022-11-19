@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/main.css" />
     <title>Desenvolvedor M3</title>
   </head>
-
   <body>
     <header>
       <img src="./img/logo-m3.png" alt="logo-m3" />
@@ -112,8 +111,17 @@
         </div>
       </section>
 
+      <section class="produtos">
+        <img src="./img/img_3.png" alt="peça de roupa">
+        <h2>Nome roupa</h2>
+        <span>R$ 28,00</span>
+        <p>em até 3x de R$ 9,33</p>
+        <button>Comprar</button>
+      </section>
+
       <section class="ordenar">
         <select name="ordenar" id="ordenar">
+          <option value="ordenarPor" selected>Ordenar por</option>
           <option value="maisRecente">Mais recente</option>
           <option value="menorPreco">Menor preço</option>
           <option value="maiorPreco">Maior preço</option>
@@ -123,7 +131,7 @@
       <section class="renderProdutos"></section>
     </main>
 
-    <!-- <script src="bundle.js"></script> -->
-    <script src=".src/js/renderProducts.js"></script>
+    <script src="bundle.js"></script>
+    <!-- <script src="js/renderProducts.js"></script> -->
   </body>
 </html>

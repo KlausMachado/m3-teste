@@ -139,30 +139,37 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem 1rem 10rem;
+  background-color: aqua;
 }
 
 main {
   padding: 2.5rem 10rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-main section h1 {
+main .filtros h1 {
   font-weight: 400;
   font-size: 32px;
   margin-bottom: 4rem;
 }
-main section .cores {
+main .filtros .cores {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
 }
-main section .cores span {
+main .filtros .cores span {
   margin-bottom: 0.9rem;
 }
-main section .cores div {
+main .filtros .cores div {
   display: flex;
   align-items: center;
   margin-bottom: 0.75rem;
 }
-main section .cores div input {
+main .filtros .cores div input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -175,38 +182,39 @@ main section .cores div input {
   justify-content: center;
   align-items: center;
 }
-main section .cores div input::before {
+main .filtros .cores div input::before {
   content: "";
   width: 0.7rem;
   height: 0.7rem;
   background-color: #00c0ee;
   opacity: 0;
 }
-main section .cores div input:checked::before {
+main .filtros .cores div input:checked::before {
   opacity: 1;
 }
-main section .cores div label {
+main .filtros .cores div label {
   font-size: 14px;
   margin-left: 0.6rem;
 }
-main section .tamanhos {
+main .filtros .tamanhos {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 11rem;
 }
-main section .tamanhos span {
+main .filtros .tamanhos span {
   margin-bottom: 1.5rem;
 }
-main section .faixaPrecos {
+main .filtros .faixaPrecos {
   margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-main section .faixaPrecos span {
+main .filtros .faixaPrecos span {
   margin-bottom: 0.9rem;
 }
-main section .faixaPrecos div input {
+main .filtros .faixaPrecos div input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -219,16 +227,55 @@ main section .faixaPrecos div input {
   justify-content: center;
   align-items: center;
 }
-main section .faixaPrecos div input::before {
+main .filtros .faixaPrecos div input::before {
   content: "";
   width: 0.7rem;
   height: 0.7rem;
   background-color: #00c0ee;
   opacity: 0;
 }
-main section .faixaPrecos div input:checked::before {
+main .filtros .faixaPrecos div input:checked::before {
   opacity: 1;
 }
-main section .faixaPrecos div label {
+main .filtros .faixaPrecos div label {
   margin-left: 0.6rem;
+}
+main .produtos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 64px;
+}
+main .produtos img {
+  width: 195px;
+  height: 293px;
+}
+main .produtos h2 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #000000;
+}
+main .produtos span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+main .produtos p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #666666;
+}
+main .produtos bottom {
+  padding: 7px 49px;
+  width: 195px;
+  height: 33px;
+  background: #000000;
+}
+main .ordenar select {
+  margin-top: 1rem;
 }/*# sourceMappingURL=main.css.map */

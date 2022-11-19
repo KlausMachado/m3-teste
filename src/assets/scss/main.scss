@@ -6,12 +6,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem 1rem 10rem;
+  background-color: aqua;
 }
 
 main {
   padding: 2.5rem 10rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-  section {
+  .filtros {
     h1 {
       font-weight: 400;
       font-size: 32px;
@@ -74,6 +81,7 @@ main {
       margin-top: 1.5rem;
       display: flex;
       flex-direction: column;
+      align-items: center;
       span {
         margin-bottom: 0.9rem;
       }
@@ -105,6 +113,49 @@ main {
           margin-left: 0.6rem;
         }
       }
+    }
+  }
+
+  .produtos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 64px;
+
+    img {
+      width: 195px;
+      height: 293px;
+    }
+    h2 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      color: $preto;
+    }
+    span {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: $preto;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $cinza1;
+    }
+    bottom {
+      padding: 7px 49px;
+      width: 195px;
+      height: 33px;
+      background: $preto;
+    }
+  }
+  .ordenar {
+    select {
+      margin-top: 1rem;
     }
   }
 }

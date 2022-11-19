@@ -5,9 +5,13 @@ module.exports = (paths) => ({
   entry: {
     main: path.resolve(__dirname, paths.scripts.src),
   },
+  devServer: {
+    historyApiFallback: true
+  },
   output: {
     path: path.resolve(__dirname, paths.dest),
     filename: "bundle.js",
+    publicPath: '/'
   },
   mode: "development",
   module: {
