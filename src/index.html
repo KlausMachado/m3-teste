@@ -8,63 +8,128 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
     <title>Desenvolvedor M3</title>
   </head>
   <body>
     <header>
       <img src="./img/logo-m3.png" alt="logo-m3" />
-      <img src="./img/image 3.png" alt="icone sacola de compras" />
+      <div>
+        <img
+          class="carrinho"
+          src="./img/image 3.png"
+          alt="icone sacola de compras"
+        />
+        <span class="contador"></span>
+      </div>
     </header>
+    <div class="linha"></div>
     <main>
       <section class="filtros">
         <h1>Blusas</h1>
-
-        <div class="cores">
+        <button class="filtrarResponsive">Filtrar</button>
+        <div class="hidden" id="divCores">
           <span>CORES</span>
           <div>
-            <input type="radio" name="cores" id="amarelo" value="amarelo" />
+            <input 
+              type="radio" 
+              name="cores" 
+              id="amarelo" 
+              value="Amarelo" />
             <label for="amarelo">Amarelo</label>
           </div>
           <div>
-            <input type="radio" name="cores" id="azul" value="azul" />
-            <label for="azul">Azul</label>
+            <input 
+              type="radio" 
+              name="cores" 
+              id="azul" 
+              value="azul" />
+            <label for="Azul">Azul</label>
           </div>
           <div>
-            <input type="radio" name="cores" id="branco" value="branco" />
+            <input 
+              type="radio" 
+              name="cores" 
+              id="branco" 
+              value="Branco" />
             <label for="branco">Branco</label>
           </div>
           <div>
-            <input type="radio" name="cores" id="cinza" value="cinza" />
+            <input 
+              type="radio" 
+              name="cores" 
+              id="cinza" 
+              value="Cinza" />
             <label for="cinza">Cinza</label>
           </div>
-          <div>
-            <input type="radio" name="cores" id="laranja" value="laranja" />
-            <label for="laranja">Laranja</label>
+          <div class="off">
+            <input
+              type="radio"
+              name="cores"
+              id="laranja"
+              value="Laranja"
+              class="off"
+            />
+            <label class="off" for="laranja">Laranja</label>
+          </div>
+          <div class="off">
+            <input
+              type="radio"
+              name="cores"
+              id="verde"
+              value="Verde"
+              class="off"
+            />
+            <label class="off" for="verde">Verde</label>
+          </div>
+          <div class="off">
+            <input
+              type="radio"
+              name="cores"
+              id="vermelho"
+              value="Vermelho"
+              class="off"
+            />
+            <label class="off" for="vermelho">Vermelho</label>
+          </div>
+          <div class="off">
+            <input
+              type="radio"
+              name="cores"
+              id="preto"
+              value="Preto"
+              class="off"
+            />
+            <label class="off" for="preto">Preto</label>
+          </div>
+          <div class="off">
+            <input
+              type="radio"
+              name="cores"
+              id="rosa"
+              value="Rosa"
+              class="off"
+            />
+            <label class="off" for="rosa">Rosa</label>
+          </div>
+          <div class="off">
+            <input
+              type="radio"
+              name="cores"
+              id="vinho"
+              value="Vinho"
+              class="off"
+            />
+            <label class="off" for="vinho">Vinho</label>
           </div>
           <div>
-            <input type="radio" name="cores" id="verde" value="verde" />
-            <label for="verde">Verde</label>
-          </div>
-          <div>
-            <input type="radio" name="cores" id="vermelho" value="vermelho" />
-            <label for="vermelho">Vermelho</label>
-          </div>
-          <div>
-            <input type="radio" name="cores" id="preto" value="preto" />
-            <label for="preto">Preto</label>
-          </div>
-          <div>
-            <input type="radio" name="cores" id="rosa" value="rosa" />
-            <label for="rosa">Rosa</label>
-          </div>
-          <div>
-            <input type="radio" name="cores" id="vinho" value="vinho" />
-            <label for="vinho">Vinho</label>
+            <button class="maisCores">
+              ver mais cores
+              <img src="./img/Vector 1.png" alt="seta para baixo" />
+            </button>
           </div>
         </div>
-
-        <div class="tamanhos">
+        <div class="hidden" id="tamanhos">
           <span>TAMANHOS</span>
           <div>
             <input type="radio" name="tamanhos" id="p" value="P" />
@@ -86,52 +151,50 @@
           </div>
         </div>
 
-        <div class="faixaPrecos">
+        <div class="hidden" id="faixaPrecos">
           <span>FAIXA DE PREÇO</span>
           <div>
-            <input type="radio" name="precos" id="0a50" />
+            <input type="radio" name="precos" id="0a50" value="50"/>
             <label for="0a50">de R$0 até R$50</label>
           </div>
           <div>
-            <input type="radio" name="precos" id="51a150" />
+            <input type="radio" name="precos" id="51a150" value="150" />
             <label for="51a150">de R$50 até R$150</label>
           </div>
           <div>
-            <input type="radio" name="precos" id="151a300" />
+            <input type="radio" name="precos" id="151a300" value="300" />
             <label for="151a300">de R$151 até R$300</label>
           </div>
           <div>
-            <input type="radio" name="precos" id="301a500" />
+            <input type="radio" name="precos" id="301a500" value="500"/>
             <label for="301a500">de R$301 até R$500</label>
           </div>
           <div>
-            <input type="radio" name="precos" id="500-acima" />
+            <input type="radio" name="precos" id="500-acima" value="501"/>
             <label for="500-acima">a partir de R$500</label>
-          </div>
+          </div> 
+        </div>  
+      </section>
+
+      <div class="container">
+        <section class="ordenar">
+          <select name="ordenar" id="ordenar">
+            <option value="ordenarPor" selected>Ordenar</option>
+            <option value="maisRecente">Mais recente</option>
+            <option value="menorPreco">Menor preço</option>
+            <option value="maiorPreco">Maior preço</option>
+          </select>
+        </section>
+        <div class="divProdutos">
+          <section id="renderProdutcs"></section>
         </div>
-      </section>
-
-      <section class="produtos">
-        <img src="./img/img_3.png" alt="peça de roupa">
-        <h2>Nome roupa</h2>
-        <span>R$ 28,00</span>
-        <p>em até 3x de R$ 9,33</p>
-        <button>Comprar</button>
-      </section>
-
-      <section class="ordenar">
-        <select name="ordenar" id="ordenar">
-          <option value="ordenarPor" selected>Ordenar por</option>
-          <option value="maisRecente">Mais recente</option>
-          <option value="menorPreco">Menor preço</option>
-          <option value="maiorPreco">Maior preço</option>
-        </select>
-      </section>
-
-      <section class="renderProdutos"></section>
+          <div>
+          <button class="maisProdutos">Carregar mais</button>
+        </div>
+        <div class="footer">
+          <p>M3: Implantação de E-commerce VTEX</p>
+      </div>
     </main>
-
-    <script src="bundle.js"></script>
-    <!-- <script src="js/renderProducts.js"></script> -->
+    <script type="module" src="js/renderProducts.js"></script>
   </body>
 </html>
